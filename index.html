@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+
+    <style>
+        #flex-container {
+            display: inline;
+            flex-direction: column;
+        }
+
+        #input_todolist {
+            display: inline-block;
+            border: 1px solid;
+            margin-right: 5px;
+
+        }
+
+        #input_btn {
+            display: inline-block;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Todo List</h1>
-    <p>Welcome to my first toy project!!</p>
+    <div id="flex-container">
+        <h1>Todo List</h1>
+        <input type="text" id="input_todolist" placeholder="해야 할 일을 입력하세요">
+        <button id="input_btn" onclick="addTodoList()">입력</button>
+    </div>
+    <ul id="list">
+        
+    </ul>
+
+    <script type="text/javascript" src="todolist.js"></script>
 </body>
+
 </html>
