@@ -7,14 +7,12 @@
     <title>Todo List</title>
 
     <style>
-        #flex-container {
+        #container {
             display: inline;
-            flex-direction: column;
         }
 
         #input_todolist {
             display: inline-block;
-            border: 1px solid;
             margin-right: 5px;
 
         }
@@ -27,13 +25,13 @@
 </head>
 
 <body>
-    <div id="flex-container">
+    <div id="container">
         <h1>Todo List</h1>
         <input type="text" id="input_todolist" placeholder="해야 할 일을 입력하세요">
         <button id="input_btn" onclick="addTodoList()">입력</button>
     </div>
     <ul id="list">
-        
+
     </ul>
 
     <script type="text/javascript" src="todolist.js"></script>
